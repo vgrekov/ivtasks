@@ -1,4 +1,4 @@
-package vgrekov.ivtasks.easy;
+package vgrekov.ivtasks.medium;
 
 import static org.junit.Assert.assertArrayEquals;
 
@@ -7,16 +7,15 @@ import java.util.List;
 
 import org.junit.Test;
 
-import vgrekov.ivtasks.easy.AddTwoNumbers.ListNode;
+import vgrekov.ivtasks.medium.AddTwoNumbers.ListNode;
 
 public class AddTwoNumbersTest {
 
 	@Test
 	public void testAddTwoNumbers() {
 		AddTwoNumbers task = new AddTwoNumbers();
-		assertArrayEquals(new int[] { 7, 0, 8 }, listNodeToDigits(task.addTwoNumbers(
-				digitsToListNode(new int[] { 2, 4, 3 }),
-				digitsToListNode(new int[] { 5, 6, 4 }))));
+		assertArrayEquals(new int[] { 7, 0, 8 }, listNodeToDigits(
+				task.addTwoNumbers(digitsToListNode(new int[] { 2, 4, 3 }), digitsToListNode(new int[] { 5, 6, 4 }))));
 	}
 
 	@Test

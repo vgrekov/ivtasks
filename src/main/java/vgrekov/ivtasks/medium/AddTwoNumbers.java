@@ -1,4 +1,4 @@
-package vgrekov.ivtasks.easy;
+package vgrekov.ivtasks.medium;
 
 public class AddTwoNumbers {
 
@@ -15,15 +15,15 @@ public class AddTwoNumbers {
 				n += l2.val;
 				l2 = l2.next;
 			}
-			
+
 			if (node.next == null) {
 				node.next = new ListNode(n);
 			} else {
 				node.next.val += n;
 			}
-			
+
 			node = node.next;
-			
+
 			if (node.val >= 10) {
 				node.next = new ListNode(1);
 				node.val = node.val % 10;
